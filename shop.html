@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shop — HeavenlySpace</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header container">
+    <div class="left">
+      <div class="logo">
+        <div class="badge">H</div>
+        <strong>HeavenlySpace</strong>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="shop.html">Shop</a>
+        <a href="furnifit.html">FurniFit</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="icons">
+      <a href="login.html">👤</a>
+      <a href="cart.html">🛒 
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+    <h2>Shop All Products</h2>
+    <p class="small muted">Discover our complete collection of modern furniture and décor</p>
+
+    <div style="display:grid;grid-template-columns:240px 1fr;gap:30px;margin-top:30px;">
+
+      <!-- FILTERS -->
+      <aside class="panel">
+        <h4>Filter by Category</h4>
+
+        <label><input type="checkbox" class="filter" value="Seating"> Seating</label><br>
+        <label><input type="checkbox" class="filter" value="Lighting"> Lighting</label><br>
+        <label><input type="checkbox" class="filter" value="Decor"> Decor</label><br>
+        <label><input type="checkbox" class="filter" value="Tables"> Tables</label><br>
+        <label><input type="checkbox" class="filter" value="Storage"> Storage</label><br>
+        <label><input type="checkbox" class="filter" value="Bathroom"> Bathroom</label><br>
+        <label><input type="checkbox" class="filter" value="Bedroom"> Bedroom</label><br>
+
+        <button style="margin-top:14px;" class="btn btn-outline" id="clearFilters">Clear Filters</button>
+      </aside>
+
+      <!-- PRODUCTS GRID -->
+      <section>
+        <div id="products" class="products-grid">
+
+          <!-- 1 -->
+          <div class="product" data-cat="Seating">
+            <img src="assets/images/product1.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Seating</small>
+              <h4 class="product-link" data-open="1">Modern Minimalist Chair</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 25,199</div>
+                <button class="btn btn-primary" data-add="1">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="product" data-cat="Lighting">
+            <img src="assets/images/product2.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Lighting</small>
+              <h4>Contemporary Table Lamp</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 11,199</div>
+                <button class="btn btn-primary" data-add="2">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="product" data-cat="Seating">
+            <img src="assets/images/product3.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Seating</small>
+              <h4>Luxury Modern Sofa</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 125,999</div>
+                <button class="btn btn-primary" data-add="3">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="product" data-cat="Decor">
+            <img src="assets/images/product4.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Decor</small>
+              <h4>Abstract Wall Art</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 16,799</div>
+                <button class="btn btn-primary" data-add="4">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="product" data-cat="Tables">
+            <img src="assets/images/product5.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Tables</small>
+              <h4>Modern Office Desk</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 50,399</div>
+                <button class="btn btn-primary" data-add="5">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="product" data-cat="Bedroom">
+            <img src="assets/images/product6.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Bedroom</small>
+              <h4>Modern Platform Bed</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 109,199</div>
+                <button class="btn btn-primary" data-add="6">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="product" data-cat="Decor">
+            <img src="assets/images/product7.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Decor</small>
+              <h4>Decorative Ceramic Vase</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 4,599</div>
+                <button class="btn btn-primary" data-add="7">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="product" data-cat="Tables">
+            <img src="assets/images/product8.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Tables</small>
+              <h4>Modern Coffee Table</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 32,899</div>
+                <button class="btn btn-primary" data-add="8">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="product" data-cat="Storage">
+            <img src="assets/images/product9.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Storage</small>
+              <h4>Wooden Cupboard</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 72,499</div>
+                <button class="btn btn-primary" data-add="9">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="product" data-cat="Bathroom">
+            <img src="assets/images/product10.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Bathroom</small>
+              <h4>Modern Bathroom Vanity</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 88,299</div>
+                <button class="btn btn-primary" data-add="10">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="product" data-cat="Seating">
+            <img src="assets/images/product11.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Seating</small>
+              <h4>Ergonomic Gaming Chair</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 45,499</div>
+                <button class="btn btn-primary" data-add="11">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="product" data-cat="Lighting">
+            <img src="assets/images/product12.jpg" alt="">
+            <div class="meta">
+              <small class="kicker">Lighting</small>
+              <h4>Minimalist Floor Lamp</h4>
+              <div class="flex-between">
+                <div class="price">Rs. 19,999</div>
+                <button class="btn btn-primary" data-add="12">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+
+    <div class="cols">
+
+      <div>
+        <div class="badge">H</div>
+        <p class="small muted">A student project by FAST University Islamabad.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="furnifit.html">FurniFit</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Customer Service</h4>
+        <ul class="footer-list">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+          <li class="small muted">Returns</li>
+          <li class="small muted">Shipping Info</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">© 2025 HeavenlySpace. A FAST University Project.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

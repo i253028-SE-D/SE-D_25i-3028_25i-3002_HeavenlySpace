@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login — HeavenlySpace</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header container">
+    <div class="left">
+      <div class="logo">
+        <div class="badge">H</div>
+        <strong>HeavenlySpace</strong>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="furnifit.html">FurniFit</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="icons">
+      <a href="login.html">👤</a>
+      <a href="cart.html">🛒 
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container" style="display:flex;justify-content:center;align-items:center;min-height:70vh;">
+
+    <div class="panel" style="width:540px;border-radius:14px;">
+      <h2 class="center">Welcome to HeavenlySpace</h2>
+      <p class="center small muted">Login or create an account</p>
+
+      <!-- SWITCH BUTTONS -->
+      <div style="margin-top:18px;">
+        <div style="display:flex;background:#f4f4f6;border-radius:28px;overflow:hidden;">
+          <button id="loginTab" class="toggle-btn active-tab">Login</button>
+          <button id="signupTab" class="toggle-btn">Sign Up</button>
+        </div>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm" data-validate style="margin-top:18px;">
+        <label class="small muted">Email</label>
+        <div style="margin-top:6px;"><input required type="email" placeholder="you@example.com"></div>
+
+        <label class="small muted" style="margin-top:12px;">Password</label>
+        <div style="margin-top:6px;"><input required type="password" placeholder="••••••••"></div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#" class="small muted">Forgot password?</a>
+        </div>
+
+        <div style="margin-top:18px;">
+          <button class="btn btn-primary" style="width:100%;">Sign In</button>
+        </div>
+      </form>
+
+      <!-- SIGN UP FORM -->
+      <form id="signupForm" data-validate style="margin-top:18px;display:none;">
+        <label class="small muted">Full Name</label>
+        <div style="margin-top:6px;"><input required type="text" placeholder="Your Name"></div>
+
+        <label class="small muted" style="margin-top:12px;">Email</label>
+        <div style="margin-top:6px;"><input required type="email" placeholder="you@example.com"></div>
+
+        <label class="small muted" style="margin-top:12px;">Password</label>
+        <div style="margin-top:6px;"><input required type="password" placeholder="Create password"></div>
+
+        <label class="small muted" style="margin-top:12px;">Confirm Password</label>
+        <div style="margin-top:6px;"><input required type="password" placeholder="Confirm password"></div>
+
+        <div style="margin-top:18px;">
+          <button class="btn btn-primary" style="width:100%;">Create Account</button>
+        </div>
+      </form>
+
+      <!-- SOCIAL LOGIN -->
+      <div style="margin-top:18px;text-align:center" class="small muted">Or continue with</div>
+
+      <div style="display:flex;gap:12px;margin-top:12px;">
+        <button class="btn btn-outline" style="flex:1">Google</button>
+        <button class="btn btn-outline" style="flex:1">Facebook</button>
+        <button class="btn btn-outline" style="flex:1">GitHub</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+    <div class="cols">
+
+      <div>
+        <div class="badge">H</div>
+        <p class="small muted" style="margin-top:12px">
+          A student project by FAST University Islamabad students to help you design your perfect space.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="furnifit.html">FurniFit</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+          <li class="small muted">Returns</li>
+          <li class="small muted">Shipping Info</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <p class="small muted">
+          FAST University, Islamabad, Pakistan<br>
+          +92 300 1234567<br>
+          contact@heavenlyspace.com
+        </p>
+      </div>
+
+    </div>
+
+    <div style="margin-top:20px;text-align:center;color:var(--muted);font-size:13px">
+      © 2025 HeavenlySpace — A FAST University Project.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- LOGIN/SIGNUP TOGGLE LOGIC -->
+  <script>
+    const loginTab = document.getElementById("loginTab");
+    const signupTab = document.getElementById("signupTab");
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+
+    loginTab.addEventListener("click", () => {
+      loginTab.classList.add("active-tab");
+      signupTab.classList.remove("active-tab");
+      loginForm.style.display = "block";
+      signupForm.style.display = "none";
+    });
+
+    signupTab.addEventListener("click", () => {
+      signupTab.classList.add("active-tab");
+      loginTab.classList.remove("active-tab");
+      signupForm.style.display = "block";
+      loginForm.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product — Modern Minimalist Chair</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header container">
+    <div class="left">
+      <div class="logo">
+        <div class="badge">H</div>
+        <strong>HeavenlySpace</strong>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="furnifit.html">FurniFit</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="icons">
+      <a href="login.html">👤</a>
+      <a href="cart.html">🛒 
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN PRODUCT SECTION -->
+  <main class="container">
+
+    <div class="gallery">
+
+      <!-- IMAGE GALLERY -->
+      <div>
+        <img src="assets/images/product1.jpg" 
+             alt="Modern Minimalist Chair"
+             style="width:100%; height:360px; object-fit:cover; border-radius:12px;">
+
+        <div class="thumb-row">
+          <img src="assets/images/product1.jpg" alt="">
+          <img src="assets/images/product1.jpg" alt="">
+          <img src="assets/images/product1.jpg" alt="">
+        </div>
+      </div>
+
+      <!-- PRODUCT INFO -->
+      <aside class="panel product-side">
+
+        <small class="kicker">Seating</small>
+        <h2>Modern Minimalist Chair</h2>
+
+        <div style="margin-top:6px;">
+          <div style="font-weight:700; font-size:20px;">Rs. 25,199</div>
+          <p class="small muted" style="margin-top:8px;">
+            A clean and simple modern chair designed to fit beautifully in any living space.
+          </p>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:12px; align-items:center;">
+          <div class="qty">
+            <button class="qty-decrease">−</button>
+            <input type="text" value="1" data-id="1">
+            <button class="qty-increase">+</button>
+          </div>
+
+          <button class="btn btn-primary"
+            onclick="addToCart(1, Number(document.querySelector('.qty input').value))">
+            Add to Cart
+          </button>
+        </div>
+
+        <hr style="margin:20px 0; border:none; border-top:1px solid var(--border)">
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div>
+            <strong>Free Delivery</strong>
+            <p class="small muted">Free delivery in Islamabad/Rawalpindi</p>
+          </div>
+          <div>
+            <strong>Easy Returns</strong>
+            <p class="small muted">30-day return policy</p>
+          </div>
+          <div>
+            <strong>Warranty Info</strong>
+            <p class="small muted">1-year product warranty included</p>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+
+    <!-- TABS -->
+    <section style="margin-top:28px;">
+      <div class="panel">
+
+        <div style="display:flex; gap:12px;">
+          <button data-tab-button="desc" class="active">Description</button>
+          <button data-tab-button="spec">Specifications</button>
+          <button data-tab-button="reviews">Reviews</button>
+        </div>
+
+        <div style="margin-top:16px;">
+          <div data-tab-panel="desc">
+            <p>
+              The Modern Minimalist Chair combines comfort and simplicity with a sleek, modern look. Suitable for bedrooms, dining rooms, and workspaces.
+            </p>
+          </div>
+
+          <div data-tab-panel="spec" hidden>
+            <p>• Material: Premium wood + fabric<br>
+               • Weight: 7.4 kg<br>
+               • Dimensions: 90cm x 48cm x 52cm<br>
+               • Color: Charcoal black<br>
+            </p>
+          </div>
+
+          <div data-tab-panel="reviews" hidden>
+            <p>No reviews yet.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- RELATED PRODUCTS -->
+    <section style="margin-top:28px;">
+      <h4>Related Products</h4>
+
+      <div style="display:flex; gap:18px; margin-top:12px;">
+
+        <div style="width:120px;">
+          <img src="assets/images/product3.jpg" 
+               style="width:100%; height:140px; object-fit:cover; border-radius:8px;">
+          <p class="small muted">Luxury Modern Sofa</p>
+        </div>
+
+        <div style="width:120px;">
+          <img src="assets/images/product5.jpg" 
+               style="width:100%; height:140px; object-fit:cover; border-radius:8px;">
+          <p class="small muted">Modern Office Desk</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer container">
+
+    <div class="cols">
+
+      <div>
+        <div class="badge">H</div>
+        <p class="small muted" style="margin-top:12px">
+          A student project by FAST University Islamabad students to help you design your ideal space.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="furnifit.html">FurniFit</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+          <li class="small muted">Returns</li>
+          <li class="small muted">Shipping Info</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <p class="small muted">
+          FAST University, Islamabad<br>
+          +92 300 1234567<br>
+          contact@heavenlyspace.com
+        </p>
+      </div>
+
+    </div>
+
+    <div style="margin-top:20px;text-align:center;color:var(--muted);font-size:13px">
+      © 2025 HeavenlySpace. A FAST University Project.
+    </div>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
